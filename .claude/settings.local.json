@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import jeepney; print\\('jeepney', jeepney.__version__\\)\")",
+      "Bash(python3 -c \"import mss, PIL; print\\('mss ok'\\)\")",
+      "Bash(timeout 45 python3 -c \"\nimport capture\nimg = capture.grab_fullscreen\\(\\)\nprint\\('size:', img.size, 'origin:', img.info.get\\('origin'\\), 'pointer_space:', img.info.get\\('pointer_space'\\)\\)\nimg2 = capture.grab_fullscreen\\(\\)\nprint\\('second grab ok:', img2.size\\)\n\" 2>&1)",
+      "Bash(python3 -m py_compile main.py capture.py)",
+      "Bash(timeout 45 python3 -c ' *)",
+      "Read(//home/ashish/.claude/plugins/cache/caveman/caveman/0d95a81d35a9/skills/caveman-compress/**)",
+      "Bash(python3 -m scripts /home/ashish/.claude/CLAUDE.md)",
+      "Bash(lsb_release -ds)",
+      "Bash(gnome-shell --version)",
+      "Read(//usr/share/xsessions/**)"
+    ]
+  }
+}
